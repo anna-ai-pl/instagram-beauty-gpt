@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instagram beauty w ChatGPT</title>
+<style>
+:root{--bg:#fbf7f4;--tx:#2b2326;--ak:#b5446e;--kar:#fff;--lin:#eadfe3}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1719;--tx:#f3eaee;--ak:#e58bae;--kar:#271f22;--lin:#3a2f33}}
+body{margin:0;background:var(--bg);color:var(--tx);font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px 64px}
+h1{font-size:30px;line-height:1.2;margin:0 0 8px}
+p.lead{margin:0 0 28px}
+.krok{background:var(--kar);border:1px solid var(--lin);border-radius:14px;padding:18px;margin:0 0 16px}
+.krok h2{font-size:19px;margin:0 0 6px}
+button{background:var(--ak);color:#fff;border:0;border-radius:10px;padding:12px 18px;font-size:16px;cursor:pointer;margin-top:8px}
+button.ok{opacity:.8}
+small{opacity:.75}
+a{color:var(--ak)}
+</style>
+</head>
+<body>
+<main>
+<h1>Instagram beauty w ChatGPT</h1>
+<p class="lead">Darmowy zestaw po polsku dla gabinetów, salonów i twórczyń beauty. Pomysły, rolki, karuzele i sprawdzanie wyników. Działa w darmowym ChatGPT.</p>
+
+<div class="krok">
+<h2>Szybki start: jedna rozmowa</h2>
+<p>Skopiuj tekst, wejdź na chatgpt.com, zacznij nową rozmowę i wklej.</p>
+<button data-plik="prompt-start.txt">Kopiuj prompt startowy</button>
+</div>
+
+<div class="krok">
+<h2>Na stałe: własny Projekt</h2>
+<p>1. W ChatGPT kliknij "Nowy projekt". 2. W ustawieniach projektu wklej instrukcję. 3. Dodaj do projektu plik z zasadami.</p>
+<button data-plik="instrukcja-projektu.txt">Kopiuj instrukcję projektu</button>
+<p><a href="zasady-beauty.md" download>Pobierz plik zasady-beauty.md</a></p>
+</div>
+
+<p><small>Asystent nie wymyśla opinii klientek, liczb ani efektów zabiegów. Nie wklejaj do ChatGPT danych o zdrowiu klientek. Autorka: Anna Sarz, <a href="https://www.instagram.com/ambasadorka.ai/">@ambasadorka.ai</a>. Licencja MIT, adaptacja projektu instagram-agent-skill (Jake Schincariol). <a href="README.md">Więcej</a></small></p>
+</main>
+<script>
+document.querySelectorAll('button[data-plik]').forEach(function(b){
+  b.addEventListener('click', async function(){
+    var stary=b.textContent;
+    try{
+      var r=await fetch(b.dataset.plik); var t=await r.text();
+      await navigator.clipboard.writeText(t);
+      b.textContent='Skopiowane'; b.classList.add('ok');
+    }catch(e){ b.textContent='Nie udało się, otwórz plik ręcznie'; }
+    setTimeout(function(){b.textContent=stary; b.classList.remove('ok');},2500);
+  });
+});
+</script>
+</body>
+</html>
