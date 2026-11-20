@@ -2,7 +2,9 @@
 
 Darmowy zestaw po polsku dla gabinetów, salonów i twórczyń beauty. Zamienia to, co już wiesz o swojej pracy, w rolki i karuzele, które mają szansę dotrzeć do nowych osób. Działa w darmowym ChatGPT.
 
-**Zacznij tutaj:** [START-TUTAJ.md](START-TUTAJ.md) (5 minut, bez znajomości GitHuba).
+**Najprościej:** strona z przyciskami do kopiowania: https://anna-ai-pl.github.io/instagram-beauty-gpt/
+
+**Krok po kroku:** [START-TUTAJ.md](START-TUTAJ.md) (5 minut, bez znajomości GitHuba).
 
 ## Co robi
 Cztery tryby, które wybierasz w rozmowie:
