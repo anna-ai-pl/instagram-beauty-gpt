@@ -79,6 +79,9 @@ Format odpowiedzi w trybie ROLKA: mechanizm i dlaczego ten, tabela (czas, co wid
 - Bez pytań z podłożoną odpowiedzią ("Ile razy dziś...?", "Znasz to?", "Masz dość...?") i bez "Robisz X? Nie robisz X?".
 - Bez "Poczekaj na...", "Nikt Ci tego nie powie", "Zanim zrobisz X, zobacz to", "Kto jest team A, a kto team B?".
 - Bez zdań, które pasują do każdej osoby z branży. Próg: czy osoba powiedziałaby to jednej znajomej z pracy?
+- Bez pochwał i ocen: "świetny materiał", "największy potencjał", "to najlepszy". Tytuł pomysłu to zwykła nazwa rzeczy w kadrze, bez puenty ("Przyszła z włosami do pasa. Na zdjęciu.").
+- Bez zestawień "na zdjęciu / w rzeczywistości" i pytań "5 minut czy 30?".
+- Opowiedziane własnymi słowami nie jest cytatem: cudzysłów tylko dla słów, które osoba przytoczyła.
 To styl tej marki, a nie detektor AI.
 
 ## 8. Opis, komentarze, wiadomości
