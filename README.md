@@ -12,8 +12,8 @@ Cztery tryby, które wybierasz w rozmowie:
 | Tryb | Kiedy | Co dostajesz |
 | --- | --- | --- |
 | **POMYSŁY** | "nie wiem, co nagrać" | do 3 pomysłów z jednej prawdziwej sceny, którą opowiesz, z pierwszym kadrem |
-| **ROLKA** | masz temat | 3 hooki, scenariusz sekunda po sekundzie, listę ujęć, opis |
-| **KARUZELA** | temat do zapisania | 6-10 plansz i opis |
+| **ROLKA** | masz temat | plan ujęć z twojej sceny, napisy i pytania zza kamery, opis; kwestie do kamery mówisz po swojemu |
+| **KARUZELA** | temat do zapisania | 4-8 plansz ze sceny i opis |
 | **SPRAWDŹ** | przed i po publikacji | 9 pytań przed publikacją albo odczyt wyników krok po kroku |
 
 ## Czego nie robi
@@ -25,12 +25,13 @@ Nie wymyśla opinii klientek, liczb, efektów zabiegów ani statystyk. Gdy czego
 | `prompt-start.txt` | wszystko w jednym tekście do wklejenia w nową rozmowę |
 | `instrukcja-projektu.txt` | do pola "Instrukcje" w twoim Projekcie ChatGPT (do 1500 znaków) |
 | `zasady-beauty.md` | jeden plik do dodania do Projektu: mechanizmy zatrzymania, budowa rolki i karuzeli, język, bezpieczeństwo |
-| `testy.md` | 5 testów, czy asystent trzyma się faktów |
+| `krotka-instrukcja.txt` | krótki wariant do porównania z pełnym, bez wyniku próby |
+| `testy.md` | 8 testów, czy asystent trzyma się faktów |
 | `CHANGELOG.md` | co się zmieniło między wersjami |
 | `ADAPTACJA-I-ZRODLA.md` | skąd pochodzą mechanizmy i co zmieniłyśmy |
 
 ## Aktualność
-Reguły zależne od Instagrama mają datę sprawdzenia i status (POTWIERDZONE albo HIPOTEZA). Przegląd co 90 dni. Wersja: v2026.11.
+Reguły zależne od Instagrama mają datę sprawdzenia i status (POTWIERDZONE albo HIPOTEZA). Przegląd co 90 dni. Wersja: v2026.12 (kandydat, przed próbą z fryzjerkami).
 Zestaw nie korzysta z Custom GPT, bo OpenAI wycofuje je 11 grudnia 2026. Projekty w ChatGPT działają dalej, także na planie darmowym.
 
 ## Autorka

@@ -37,18 +37,30 @@ a{color:var(--ak)}
 <p><a href="zasady-beauty.md" download>Pobierz plik zasady-beauty.md</a></p>
 </div>
 
-<p><small>Asystent nie wymyśla opinii klientek, liczb ani efektów zabiegów. Nie wklejaj do ChatGPT danych o zdrowiu klientek. Autorka: Anna Sarz, <a href="https://www.instagram.com/ambasadorka.ai/">@ambasadorka.ai</a>. Licencja MIT, adaptacja projektu instagram-agent-skill (Jake Schincariol). <a href="https://github.com/anna-ai-pl/instagram-beauty-gpt">Pliki i instrukcja na GitHubie</a></small></p>
+<p><small>Asystent nie wymyśla opinii klientek, liczb ani efektów zabiegów. Opowiadaj własnymi słowami, bez niczego, po czym da się rozpoznać klientkę. Nie wklejaj nagrań, zdjęć, zrzutów rozmów ani danych o zdrowiu. Autorka: Anna Sarz, <a href="https://www.instagram.com/ambasadorka.ai/">@ambasadorka.ai</a>. Licencja MIT, adaptacja projektu instagram-agent-skill (Jake Schincariol). <a href="https://github.com/anna-ai-pl/instagram-beauty-gpt">Pliki i instrukcja na GitHubie</a></small></p>
 </main>
 <script>
 document.querySelectorAll('button[data-plik]').forEach(function(b){
+  var tekst=null;
+  var pobranie=fetch(b.dataset.plik).then(function(r){ if(!r.ok) throw new Error(r.status); return r.text(); }).then(function(t){ tekst=t; }).catch(function(){});
+  function pokazRecznie(){
+    var pole=b.nextElementSibling;
+    if(!pole || pole.tagName!=='TEXTAREA'){
+      pole=document.createElement('textarea'); pole.readOnly=true; pole.rows=8; pole.style.width='100%'; pole.style.fontSize='16px';
+      pole.setAttribute('aria-label','Tekst do skopiowania'); b.after(pole);
+    }
+    pole.value=tekst; pole.focus(); pole.select();
+    return pole;
+  }
   b.addEventListener('click', async function(){
-    var stary=b.textContent;
-    try{
-      var r=await fetch(b.dataset.plik); var t=await r.text();
-      await navigator.clipboard.writeText(t);
-      b.textContent='Skopiowane'; b.classList.add('ok');
-    }catch(e){ b.textContent='Nie udało się, otwórz plik ręcznie'; }
-    setTimeout(function(){b.textContent=stary; b.classList.remove('ok');},2500);
+    var stary=b.dataset.napis||(b.dataset.napis=b.textContent);
+    if(tekst===null){ b.textContent='Wczytuję...'; await pobranie; }
+    if(tekst===null){ b.textContent='Nie udało się wczytać, odśwież stronę'; return; }
+    var ok=false;
+    try{ await navigator.clipboard.writeText(tekst); ok=true; }
+    catch(e){ pokazRecznie(); }
+    b.textContent=ok?'Skopiowane':'Zaznacz i skopiuj tekst poniżej'; if(ok) b.classList.add('ok');
+    setTimeout(function(){b.textContent=stary; b.classList.remove('ok');},4000);
   });
 });
 </script>
