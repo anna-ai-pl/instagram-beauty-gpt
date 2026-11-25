@@ -11,10 +11,10 @@ Cztery tryby, które wybierasz w rozmowie:
 
 | Tryb | Kiedy | Co dostajesz |
 | --- | --- | --- |
-| **POMYSŁY** | "nie wiem, co nagrać" | 6 tematów z twoich usług i pytań klientek, z pierwszym kadrem |
+| **POMYSŁY** | "nie wiem, co nagrać" | do 3 pomysłów z jednej prawdziwej sceny, którą opowiesz, z pierwszym kadrem |
 | **ROLKA** | masz temat | 3 hooki, scenariusz sekunda po sekundzie, listę ujęć, opis |
 | **KARUZELA** | temat do zapisania | 6-10 plansz i opis |
-| **SPRAWDŹ** | przed i po publikacji | 7 pytań przed publikacją albo odczyt wyników krok po kroku |
+| **SPRAWDŹ** | przed i po publikacji | 9 pytań przed publikacją albo odczyt wyników krok po kroku |
 
 ## Czego nie robi
 Nie wymyśla opinii klientek, liczb, efektów zabiegów ani statystyk. Gdy czegoś brakuje, zostawia `[do uzupełnienia]` albo pyta. To najważniejsza zasada zestawu: w beauty zmyślony efekt albo opinia to ryzyko prawne i utrata zaufania.
@@ -24,7 +24,7 @@ Nie wymyśla opinii klientek, liczb, efektów zabiegów ani statystyk. Gdy czego
 | --- | --- |
 | `prompt-start.txt` | wszystko w jednym tekście do wklejenia w nową rozmowę |
 | `instrukcja-projektu.txt` | do pola "Instrukcje" w twoim Projekcie ChatGPT (do 1500 znaków) |
-| `zasady-beauty.md` | jeden plik do dodania do Projektu: bank 12 hooków, budowa rolki i karuzeli, język, bezpieczeństwo |
+| `zasady-beauty.md` | jeden plik do dodania do Projektu: mechanizmy zatrzymania, budowa rolki i karuzeli, język, bezpieczeństwo |
 | `testy.md` | 5 testów, czy asystent trzyma się faktów |
 | `CHANGELOG.md` | co się zmieniło między wersjami |
 | `ADAPTACJA-I-ZRODLA.md` | skąd pochodzą mechanizmy i co zmieniłyśmy |
