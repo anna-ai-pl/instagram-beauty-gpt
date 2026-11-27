@@ -3,6 +3,7 @@
 Każda reguła zależna od Instagrama albo ChatGPT ma w `zasady-beauty.md` datę sprawdzenia i status: POTWIERDZONE, HIPOTEZA albo NIEAKTUALNE. Przegląd co 90 dni i od razu po dużej zmianie platformy. Zasad nie zmieniamy po cichu: każda zmiana trafia tutaj.
 
 ## v2026.12
+- ROLKA mówi, gdzie dodać napisy: w edytorze rolek Instagrama, bez osobnej aplikacji do montażu (27.11).
 - Najpierw jedna prawdziwa scena z pracy, potem pomysły. Najwyżej 3 zamiast 6.
 - Zamiast 12 szablonów hooków 6 mechanizmów. Test podmiany usługi i salonu.
 - ROLKA nie pisze kwestii do kamery: pytania zza kamery i dosłowne cytaty osoby.

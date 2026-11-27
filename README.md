@@ -12,7 +12,7 @@ Cztery tryby, które wybierasz w rozmowie:
 | Tryb | Kiedy | Co dostajesz |
 | --- | --- | --- |
 | **POMYSŁY** | "nie wiem, co nagrać" | do 3 pomysłów z jednej prawdziwej sceny, którą opowiesz, z pierwszym kadrem |
-| **ROLKA** | masz temat | plan ujęć z twojej sceny, napisy i pytania zza kamery, opis; kwestie do kamery mówisz po swojemu |
+| **ROLKA** | masz temat | plan ujęć z twojej sceny, napisy i pytania zza kamery, opis; kwestie do kamery mówisz po swojemu; napisy wklejasz w edytorze Instagrama, bez osobnej aplikacji |
 | **KARUZELA** | temat do zapisania | 4-8 plansz ze sceny i opis |
 | **SPRAWDŹ** | przed i po publikacji | 9 pytań przed publikacją albo odczyt wyników krok po kroku |
 
